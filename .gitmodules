@@ -1,0 +1,3 @@
+[submodule "external/MathLib"]
+	path = external/MathLib
+	url = https://github.com/fa-kl/MathLib.git

@@ -1,3 +1,19 @@
+# Build directories
+build/
+cmake-build-*/
+
+# Doxygen generated documentation
+docs/
+html/
+latex/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
 # Prerequisites
 *.d
 
@@ -6,6 +22,8 @@
 *.lo
 *.o
 *.obj
+*.ko
+*.elf
 
 # Precompiled Headers
 *.gch
@@ -16,6 +34,9 @@
 
 # Debugger Files
 *.pdb
+*.dSYM/
+*.su
+*.idb
 
 # Compiled Dynamic libraries
 *.so
@@ -36,13 +57,42 @@
 *.exe
 *.out
 *.app
+MathLibMain
+MathLibTests
 
-# debug information files
+# Debug information files
 *.dwo
 
-# build path
-Build/
+# Coverage files
+*.gcda
+*.gcno
+*.gcov
+coverage.info
+coverage_html/
+*.profdata
+*.profraw
 
-# IDE path(s)
-.idea/
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+DartConfiguration.tcl
+Testing/
+install_manifest.txt
+Makefile
+_deps/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.tmp
+
+# VS Code folder
 .vscode/
+
+# data directory
+data/
